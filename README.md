@@ -1,71 +1,58 @@
-# intellij-keymap-tooltip README
+# IntelliJ Keymap Helper
 
-This is the README for your extension "intellij-keymap-tooltip". After writing up a brief description, we recommend including the following sections.
+This is a very simple and effective shortcut helper for developers who are familiar with IntelliJ.
+
+If you don't know the shortcuts in VS Code, try pressing the corresponding IntelliJ shortcut. A tooltip will appear.
+
+Stop searching for shortcuts and stay in your flow!
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Non-Intrusive Hints**: Get immediate feedback without leaving your editor.
+- **Cross-Platform Support**: Works for both macOS (`Cmd`) and Windows/Linux (`Ctrl`) users.
+- **Core Shortcuts Covered**: Includes essential shortcuts for formatting, navigation, and code editing.
 
-For example if there is an image subfolder under your extension project workspace:
+## How It Works
 
-\!\[feature X\]\(images/feature-x.png\)
+Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a line). A small information message will pop up, reminding you of the VS Code equivalent (e.g., `Option+Shift+Down`).
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Supported Shortcuts
 
-## Requirements
+| Feature              | IntelliJ (macOS)      | IntelliJ (Win/Linux) | VS Code (macOS)         | VS Code (Win/Linux)   |
+| :------------------- | :-------------------- | :------------------- | :---------------------- | :-------------------- |
+| **Format Code**      | `Cmd + Option + L`    | `Ctrl + Alt + L`     | `Shift + Option + F`    | `Shift + Alt + F`     |
+| **Go to Definition** | `Cmd + B`             | `Ctrl + B`           | `F12`                   | `F12`                 |
+| **Find Usages**      | `Alt + F7`            | `Alt + F7`           | `Shift + F12`           | `Shift + F12`         |
+| **Rename**           | `Shift + F6`          | `Shift + F6`         | `F2`                    | `F2`                  |
+| **Delete Line**      | `Cmd + Y`             | `Ctrl + Y`           | `Cmd + Shift + K`       | `Ctrl + Shift + K`    |
+| **Duplicate Line**   | `Cmd + D`             | `Ctrl + D`           | `Option + Shift + Down` | `Alt + Shift + Down`  |
+| **Navigate to File** | `Cmd + Shift + O`     | `Ctrl + Shift + N`   | `Cmd + P`               | `Ctrl + P`            |
+| **Recent Files**     | `Cmd + E`             | `Ctrl + E`           | `Ctrl + Tab`            | `Ctrl + Tab`          |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## ❗ Important: Resolving Keybinding Conflicts
 
-## Extension Settings
+This extension works by registering IntelliJ's shortcuts. However, these shortcuts might already be in use by VS Code or another extension.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+**If a shortcut doesn't work, you likely have a conflict.** Here’s how to fix it:
 
-For example:
+1. Open the Keyboard Shortcuts editor:
+    - On macOS: `Cmd + K` then `Cmd + S`
+    - On Windows/Linux: `Ctrl + K` then `Ctrl + S`
+2. In the search bar, type the exact shortcut that isn't working (e.g., `cmd+alt+l` on Mac).
+3. You will see a list of commands assigned to that shortcut. If you see a command other than `intellijKeymapTooltip.checkShortcut`, it's a conflict.
+4. Right-click on the conflicting command and select **Remove Keybinding** to allow this extension to work.
 
-This extension contributes the following settings:
+## Installation
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1. Open **Visual Studio Code**.
+2. Go to the **Extensions** view (`Cmd+Shift+X`).
+3. Search for `intellij-keymap-tooltip`.
+4. Click **Install**.
 
-## Known Issues
+## Contributing
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Suggestions and contributions are welcome! If you have a favorite IntelliJ shortcut you'd like to see added, please feel free to open an issue or submit a pull request on the project's GitHub repository.
 
-## Release Notes
+## License
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This project is licensed under the MIT License.

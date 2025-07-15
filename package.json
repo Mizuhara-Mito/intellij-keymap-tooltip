@@ -39,18 +39,98 @@
       },
       {
         "command": "intellijKeymapTooltip.checkShortcut",
-        "key": "ctrl+shift+f",
+        "key": "ctrl+d",
         "when": "editorTextFocus && !isMac",
         "args": {
-          "key": "ctrl+shift+f"
+          "key": "ctrl+d"
         }
       },
       {
         "command": "intellijKeymapTooltip.checkShortcut",
-        "key": "cmd+shift+f",
+        "key": "cmd+d",
         "when": "editorTextFocus && isMac",
         "args": {
-          "key": "cmd+shift+f"
+          "key": "cmd+d"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "ctrl+shift+n",
+        "when": "editorTextFocus && !isMac",
+        "args": {
+          "key": "ctrl+shift+n"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "cmd+shift+o",
+        "when": "editorTextFocus && isMac",
+        "args": {
+          "key": "cmd+shift+o"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "ctrl+e",
+        "when": "editorTextFocus && !isMac",
+        "args": {
+          "key": "ctrl+e"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "cmd+e",
+        "when": "editorTextFocus && isMac",
+        "args": {
+          "key": "cmd+e"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "ctrl+b",
+        "when": "editorTextFocus && !isMac",
+        "args": {
+          "key": "ctrl+b"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "cmd+b",
+        "when": "editorTextFocus && isMac",
+        "args": {
+          "key": "cmd+b"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "alt+f7",
+        "when": "editorTextFocus",
+        "args": {
+          "key": "alt+f7"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "shift+f6",
+        "when": "editorTextFocus",
+        "args": {
+          "key": "shift+f6"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "ctrl+y",
+        "when": "editorTextFocus && !isMac",
+        "args": {
+          "key": "ctrl+y"
+        }
+      },
+      {
+        "command": "intellijKeymapTooltip.checkShortcut",
+        "key": "cmd+y",
+        "when": "editorTextFocus && isMac",
+        "args": {
+          "key": "cmd+y"
         }
       }
     ]

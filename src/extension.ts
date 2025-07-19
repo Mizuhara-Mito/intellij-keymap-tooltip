@@ -19,15 +19,13 @@ const keymap = new Map<string, { vscodeShortcut: string, description: string }>(
 ]);
 
 export function activate(context: vscode.ExtensionContext) {
-  vscode.window.showInformationMessage('IntelliJ Keymap Tooltip is now active.');
+  vscode.window.setStatusBarMessage('IntelliJ Keymap Tooltip is now active.', 5000);
 
   const disposable = vscode.commands.registerCommand('intellijKeymapTooltip.checkShortcut', (args) => {
     const pressedKey = args.key;
     const entry = keymap.get(pressedKey);
     if (entry) {
-      vscode.window.showInformationMessage(
-        `💡${entry.description} => '${entry.vscodeShortcut}'`
-      );
+      vscode.window.setStatusBarMessage(`💡${entry.description} => '${entry.vscodeShortcut}'`, 10000);
     }
   });
 

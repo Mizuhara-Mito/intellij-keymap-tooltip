@@ -1,8 +1,10 @@
 # IntelliJ Shortcut Hint
 
-A simple but essential hint for developers transitioning from IntelliJ IDEA to Visual Studio Code.
+This extension provides a simple, non-intrusive way to learn VS Code shortcuts while using your muscle memory from IntelliJ IDEA.
 
-This extension displays a helpful hint in the status bar with the corresponding VS Code shortcut whenever you press a common IntelliJ keybinding. Stop searching for shortcuts and stay in your flow!
+Forcefully rebinding keys can cause conflicts and may hinder full adaptation to the VS Code environment. Instead of binding, this extension gives you immediate feedback on your incorrect shortcut usage, which is a simpler and more effective way to adapt quickly.
+
+When you press a common IntelliJ keybinding, a helpful hint appears in the status bar, showing you the correct VS Code equivalent. Stop searching, start learning.
 
 ## Features
 
@@ -13,6 +15,9 @@ This extension displays a helpful hint in the status bar with the corresponding 
 ## How It Works
 
 Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a line). A small information message will pop up in the status bar, reminding you of the VS Code equivalent (e.g., `Option+Shift+Down`).
+
+![Status Bar Hint Screenshot](./images/status-bar-hint.png)
+
 
 ## Supported Shortcuts
 

@@ -1,9 +1,14 @@
 {
   "name": "intellij-shortcut-hint",
   "displayName": "IntelliJ Shortcut Hint",
+  "icon": "images/icon.png",
   "publisher": "mito",
-  "description": "A simple helper for developers transitioning from IntelliJ IDEA to VS Code.",
-  "version": "0.1.0",
+  "description": "When you type a shortcut in Intellij, It will tell you the corresponding shortcut in VS Code.",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mizuhara-Mito/intellij-shortcut-hint.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },

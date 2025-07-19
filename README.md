@@ -1,10 +1,7 @@
 # IntelliJ Shortcut Hint
 
-This extension provides a simple, non-intrusive way to learn VS Code shortcuts while using your muscle memory from IntelliJ IDEA.
-
-Forcefully rebinding keys can cause conflicts and may hinder full adaptation to the VS Code environment. Instead of binding, this extension gives you immediate feedback on your incorrect shortcut usage, which is a simpler and more effective way to adapt quickly.
-
-When you press a common IntelliJ keybinding, a helpful hint appears in the status bar, showing you the correct VS Code equivalent. Stop searching, start learning.
+Don't remember VS Code shortcuts? Just type your familiar IntelliJ shortcuts, and this extension will show you the corresponding VS Code shortcut.
+![Status Bar Hint Screenshot](./images/status-bar-hint.png)
 
 ## Features
 
@@ -18,6 +15,9 @@ Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a l
 
 ![Status Bar Hint Screenshot](./images/status-bar-hint.png)
 
+## Why Hints, Not Keybindings?
+
+Forcefully rebinding keys can cause conflicts and may hinder full adaptation to the VS Code environment. Instead of binding, this extension gives you immediate feedback on your incorrect shortcut usage, which is a simpler and more effective way to adapt quickly.
 
 ## Supported Shortcuts
 
@@ -32,7 +32,7 @@ Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a l
 | **Navigate to File** | `Cmd + Shift + O`     | `Ctrl + Shift + N`   | `Cmd + P`               | `Ctrl + P`            |
 | **Recent Files**     | `Cmd + E`             | `Ctrl + E`           | `Ctrl + Tab`            | `Ctrl + Tab`          |
 
-## ❗ Important: Resolving Keybinding Conflicts
+## Resolving Keybinding Conflicts
 
 This extension works by registering IntelliJ's shortcuts. However, these shortcuts might already be in use by VS Code or another extension.
 

@@ -1,10 +1,8 @@
-# IntelliJ Keymap Helper
+# IntelliJ Shortcut Hint
 
-This is a very simple and effective shortcut helper for developers who are familiar with IntelliJ.
+A simple but essential hint for developers transitioning from IntelliJ IDEA to Visual Studio Code.
 
-If you don't know the shortcuts in VS Code, try pressing the corresponding IntelliJ shortcut. A tooltip will appear.
-
-Stop searching for shortcuts and stay in your flow!
+This extension displays a helpful hint in the status bar with the corresponding VS Code shortcut whenever you press a common IntelliJ keybinding. Stop searching for shortcuts and stay in your flow!
 
 ## Features
 
@@ -14,7 +12,7 @@ Stop searching for shortcuts and stay in your flow!
 
 ## How It Works
 
-Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a line). A small information message will pop up, reminding you of the VS Code equivalent (e.g., `Option+Shift+Down`).
+Simply press an IntelliJ shortcut you're used to (e.g., `Cmd+D` to duplicate a line). A small information message will pop up in the status bar, reminding you of the VS Code equivalent (e.g., `Option+Shift+Down`).
 
 ## Supported Shortcuts
 
@@ -39,14 +37,14 @@ This extension works by registering IntelliJ's shortcuts. However, these shortcu
     - On macOS: `Cmd + K` then `Cmd + S`
     - On Windows/Linux: `Ctrl + K` then `Ctrl + S`
 2. In the search bar, type the exact shortcut that isn't working (e.g., `cmd+alt+l` on Mac).
-3. You will see a list of commands assigned to that shortcut. If you see a command other than `intellijKeymapTooltip.checkShortcut`, it's a conflict.
+3. You will see a list of commands assigned to that shortcut. If you see a command other than `intellijShortcutHint.checkShortcut`, it's a conflict.
 4. Right-click on the conflicting command and select **Remove Keybinding** to allow this extension to work.
 
 ## Installation
 
 1. Open **Visual Studio Code**.
 2. Go to the **Extensions** view (`Cmd+Shift+X`).
-3. Search for `intellij-keymap-tooltip`.
+3. Search for `IntelliJ Shortcut Hint`.
 4. Click **Install**.
 
 ## Contributing

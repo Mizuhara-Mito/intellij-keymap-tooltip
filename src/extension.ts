@@ -19,9 +19,9 @@ const keymap = new Map<string, { vscodeShortcut: string, description: string }>(
 ]);
 
 export function activate(context: vscode.ExtensionContext) {
-  vscode.window.setStatusBarMessage('IntelliJ Keymap Tooltip is now active.', 5000);
+  vscode.window.setStatusBarMessage('IntelliJ Shortcut Hint is now active.', 5000);
 
-  const disposable = vscode.commands.registerCommand('intellijKeymapTooltip.checkShortcut', (args) => {
+  const disposable = vscode.commands.registerCommand('intellijShortcutHint.checkShortcut', (args) => {
     const pressedKey = args.key;
     const entry = keymap.get(pressedKey);
     if (entry) {
@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(disposable);
 
-  const listShortcutsDisposable = vscode.commands.registerCommand('intellijKeymapTooltip.listSupportedShortcuts', () => {
+  const listShortcutsDisposable = vscode.commands.registerCommand('intellijShortcutHint.listSupportedShortcuts', () => {
     const items = Array.from(keymap.entries()).map(([intellij, { vscodeShortcut, description }]) => ({
       label: `💡 ${description}`,
       detail: `IntelliJ: ${intellij}  =>  VS Code: ${vscodeShortcut}`

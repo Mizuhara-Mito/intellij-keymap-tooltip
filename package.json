@@ -1,6 +1,7 @@
 {
   "name": "intellij-shortcut-hint",
   "displayName": "IntelliJ Shortcut Hint",
+  "publisher": "mito",
   "description": "A simple helper for developers transitioning from IntelliJ IDEA to VS Code.",
   "version": "0.1.0",
   "engines": {
